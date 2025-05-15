@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 8000;
 
 //test endpoint
 app.get("/", (req, res) => {
-  return { hello: "world" };
+  res.send("Test endpoint is working!");
 });
 
 //ADMIN ENDPOINTS
