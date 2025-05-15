@@ -20,6 +20,11 @@ require("dotenv").config();
 
 const PORT = process.env.PORT || 8000;
 
+//test endpoint
+app.get("/", (req, res) => {
+  return { hello: "world" };
+});
+
 //ADMIN ENDPOINTS
 
 app.get("/api/customers", (req, res) => {
