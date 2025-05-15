@@ -16,7 +16,9 @@ app.use(bodyParser.json());
 
 app.use(express.json());
 
-const PORT = 8000;
+require("dotenv").config();
+
+const PORT = process.env.PORT || 8000;
 
 //ADMIN ENDPOINTS
 
